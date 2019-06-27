@@ -72,7 +72,8 @@ print(frame2['state'])
 # 两种方式取值
 print(frame2.state)
 print(frame2.year)
-print(frame2.ix['three'])
+# print(frame2.ix['three'])
+print(frame2.loc['three'])
 # 默认给所有赋值
 frame2['debt'] = 16.5
 print(frame2)
@@ -132,7 +133,7 @@ print(frame3)
 print('Ohio' in frame3.columns)
 print(2003 in frame3.index)
 print(2002 in frame3.index)
-
+'''
 print("================数据读取============")
 
 ###数据读取
@@ -356,9 +357,10 @@ data=json.loads(resp.text)
 print(data)
 issue_labels = DataFrame(data)
 print(issue_labels)
-
+'''
 
 #使用数据库
+print("=========使用数据库=========")
 import sqlite3
 
 query = """
